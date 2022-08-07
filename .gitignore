@@ -3,3 +3,4 @@ new-dist
 dist-newstyle
 
 .ghc.environment*
+*.hi
