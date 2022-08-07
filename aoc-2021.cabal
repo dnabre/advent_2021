@@ -5,7 +5,7 @@ cabal-version:       >=1.10
 -- http://haskell.org/cabal/users-guide/
 
 -- The name of the package.
-name:                Cabal-example
+name:                Aoc-Y2021
 
 -- The package version.  See the Haskell package versioning policy (PVP)
 -- for standards guiding when and how versions should be incremented.
@@ -25,10 +25,10 @@ version:             0.1.0.0
 -- bug-reports:
 
 -- The license under which the package is released.
-license:             BSD3
+license:             AllRightsReserved
 
 -- The file containing the license text.
-license-file:        LICENSE
+-- license-file:        LICENSE
 
 -- The package author(s).
 -- author:
@@ -46,10 +46,10 @@ build-type:          Simple
 
 -- Extra files to be distributed with the package, such as examples or a
 -- README.
-extra-source-files:  CHANGELOG.md
+-- extra-source-files:  CHANGELOG.md
 
 
-executable Cabal-example
+executable aoc_2021
   -- .hs or .lhs file containing the Main module.
     main-is:             Main.hs
 
