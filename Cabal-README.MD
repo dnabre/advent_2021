@@ -19,3 +19,7 @@ This template makes it easy for you to use Haskell with Cabal on Repl.it.
 - To install dependencies make sure to open the shell (control/cmd + K) and run `cabal update && cabal install --only-dependencies`
 
 That's it! This template has `titlecase` as a dependency just for the example.
+
+
+
+from: https://github.com/rodrigobotti/haskell-for-imperative-programmers
