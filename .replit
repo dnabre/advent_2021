@@ -1,2 +1,18 @@
 language="haskell"
 run="cabal new-run"
+entrypoint = "Main.hs"
+hidden = [".ghci", "ghci_wrapper.sh"]
+
+[languages]
+
+[languages.haskell]
+pattern = "**/*.hs"
+
+[languages.haskell.languageServer]
+start = ["haskell-language-server-wrapper", "--lsp"]
+
+[nix]
+channel = "stable-22_11"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix", ".ghci"]
