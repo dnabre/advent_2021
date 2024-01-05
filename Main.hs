@@ -9,7 +9,7 @@ import qualified Data.IntSet as IntSet
 import qualified Data.Set as Set
 import qualified Data.Map as Map
 import qualified Data.MultiSet as MultiSet
-import System.TimeIt
+
 
 -- Advent of Code 2021
 -- Day 17
@@ -20,13 +20,13 @@ day12_answers = (19503, 5200)
 
 
 part_1_test::[Char]
-part_1_test = "../day17/aoc_17_test_1.txt"
+part_1_test = "day17/aoc_17_test_1.txt"
 part_2_test::[Char]
-part_2_test = "../day17/aoc_17_test_2.txt"
+part_2_test = "day17/aoc_17_test_2.txt"
 part_1_input::[Char]
-part_1_input = "../day17/aoc_17_part_1.txt"
+part_1_input = "day17/aoc_17_part_1.txt"
 part_2_input::[Char]
-part_2_input = "../day17/aoc_17_part_2.txt"
+part_2_input = "day17/aoc_17_part_2.txt"
 
 part1::(Int,Int)->(Int,Int)->Int
 part1 (minX,maxX) (minY,maxY) = maxYPos
@@ -35,7 +35,7 @@ part1 (minX,maxX) (minY,maxY) = maxYPos
         maxYPos = maxYVel * (maxYVel +1) `div` 2
 
 
-part2::Int
+
 part2 = length trajectories   
         
            
@@ -60,19 +60,21 @@ splitEmptyLine ls = splitEmptyLine' ls []
         splitEmptyLine' (x:xs) p = splitEmptyLine' xs (x:p)
 
 
-
 main :: IO()
 main = do 
             printf "Advent of Code 2021, Day 17:\n"
             vals1 <- getStringVals part_1_input
+            printf "    read %d lines of input\n" (length vals1)
             vals2 <- getStringVals part_2_input
-    
-         
-            let answer1 = part1 (57,116) (-198,-148)
-            printf "\n   Part 1    Solution: %d" answer1         
+            printf "    read %d lines of input\n" (length vals2)
 
+           
+            let answer1 = part1 (57,116) (-198,-148)
+            printf "\n   Part 1    Solution: %d \n" answer1         
+
+            
             let answer2 = part2 
-            printf "\n   Part 2    Solution: %d" answer2
+            printf "\n   Part 2    Solution: %d \n" answer2
 
             printf "\n---                 done                 ---\n"
 
