@@ -64,7 +64,7 @@ executable aoc_2021
                     , split
                     , containers
                     , multiset     
-                    , timeit
+
               
 
 
